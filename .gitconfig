@@ -1,0 +1,16 @@
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+[user]
+	name = Julius B.
+	email = julius.bullinger+github@gmail.com
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[core]
+	editor = vim
+	excludesfile = /home/sqrt/.gitignore
