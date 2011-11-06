@@ -2,8 +2,9 @@
 .DS_Store
 Thumbs.db
 
-# Object files
+# Object files and build directories
 *.o
+bin/
 
 # temp files
 *~
