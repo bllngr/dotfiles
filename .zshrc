@@ -30,3 +30,8 @@ plugins=(git svn)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# Enable comments
+setopt interactivecomments
+
+alias pomodoro='p-timer.sh 25 "Pomodoro" "Pomodoro started, you have 25 minutes left" "Pomodoro ended. Please stop the work and take a short break"'
