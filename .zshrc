@@ -31,6 +31,12 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# change PATH
+export ANDROID_HOME=~/.android-sdk
+export ANDROID_SDK=$ANDROID_HOME
+
+export PATH=$PATH:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:~/bin
+
 # Enable comments
 setopt interactivecomments
 
