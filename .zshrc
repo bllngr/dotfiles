@@ -39,6 +39,8 @@ export PATH=$PATH:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:~/bin
 
 # Enable comments
 setopt interactivecomments
+unsetopt correctall
+setopt correct
 
 ## Aliases
 # display the last mount of a device, usually a USB key
