@@ -40,5 +40,11 @@ export PATH=$PATH:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:~/bin
 
 # Enable comments
 setopt interactivecomments
+unsetopt correctall
+setopt correct
+
+## Aliases
+# display the last mount of a device, usually a USB key
+alias lsext='dmesg | grep "\[sd" | tail -1'
 
 alias pomodoro='p-timer.sh 25 "Pomodoro" "Pomodoro started, you have 25 minutes left" "Pomodoro ended. Please stop the work and take a short break"'
