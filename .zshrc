@@ -45,3 +45,4 @@ setopt correct
 # display the last mount of a device, usually a USB key
 alias lsext='dmesg | grep "\[sd" | tail -1'
 alias pomodoro='p-timer.sh 25 "Pomodoro" "Pomodoro started, you have 25 minutes left" "Pomodoro ended. Please stop the work and take a short break"'
+alias monoff='xset dpms force off'
