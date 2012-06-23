@@ -5,9 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="mrtazz"
-ZSH_THEME="kphoen"
+ZSH_THEME="sqrt"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -46,5 +44,5 @@ setopt correct
 ## Aliases
 # display the last mount of a device, usually a USB key
 alias lsext='dmesg | grep "\[sd" | tail -1'
-
 alias pomodoro='p-timer.sh 25 "Pomodoro" "Pomodoro started, you have 25 minutes left" "Pomodoro ended. Please stop the work and take a short break"'
+alias monoff='xset dpms force off'
