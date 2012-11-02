@@ -27,6 +27,7 @@ ZSH_THEME="sqrt"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+# source ./.zsh-funcs
 
 # Customize to your needs...
 
@@ -44,5 +45,21 @@ setopt correct
 ## Aliases
 # display the last mount of a device, usually a USB key
 alias lsext='dmesg | grep "\[sd" | tail -1'
+# use grc when available:
+GRC=`which grc`
+if [ -n GRC ]; then
+    alias colourify="$GRC -es --colour=auto"
+    alias configure='colourify ./configure'
+    alias diff='colourify diff'
+    alias make='colourify make'
+    alias gcc='colourify gcc'
+    alias g++='colourify g++'
+    alias as='colourify as'
+    alias gas='colourify gas'
+    alias ld='colourify ld'
+    alias netstat='colourify netstat'
+    alias ping='colourify ping'
+   alias traceroute='colourify /usr/sbin/traceroute'
+fi
 alias pomodoro='p-timer.sh 25 "Pomodoro" "Pomodoro started, you have 25 minutes left" "Pomodoro ended. Please stop the work and take a short break"'
 alias monoff='xset dpms force off'
