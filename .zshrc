@@ -46,9 +46,8 @@ setopt correct
 # display the last mount of a device, usually a USB key
 alias lsext='dmesg | grep "\[sd" | tail -1'
 # use grc when available:
-GRC=`which grc`
-if [ -n GRC ]; then
-    alias colourify="$GRC -es --colour=auto"
+if [ -f /usr/bin/grc ]; then
+    alias colourify="/usr/bin/grc -es --colour=auto"
     alias configure='colourify ./configure'
     alias diff='colourify diff'
     alias make='colourify make'
