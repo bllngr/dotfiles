@@ -1,0 +1,15 @@
+# Android SDK's env variables
+export ANDROID_HOME=~/.android-sdk
+export ANDROID_SDK=$ANDROID_HOME
+
+# add Android SDK tools to path
+export PATH=$PATH:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:~/bin
+
+# enable font hinting for Java AWT applications
+export _JAVA_OPTIONS=$_JAVA_OPTIONS' -Dawt.useSystemAAFontSettings=lcd'
+
+# enable GTK style for Java Swing applications be default
+export _JAVA_OPTIONS=$_JAVA_OPTIONS' -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+
+# use system JRE in Matlab
+export MATLAB_JAVA=/usr/lib/jvm/java-7-oracle/jre

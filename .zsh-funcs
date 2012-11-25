@@ -1,0 +1,28 @@
+# create a bare git repository in the Dropbox folder
+# Usage: dbr <reponame> <directory>
+function dbr () {
+	# First, create the Git repository in Dropbox (assuming your repository 
+	# is named myrepo):
+	cd ~/Dropbox
+	mkdir -p Repositories/${1}.git
+	cd !$
+	git --bare init
+
+	# Now we can add the new remote to our existing repository (again, assuming
+	# it lives at ~/Projects/myrepo).
+	cd ~/Projects/myrepo
+	mkdir -p ${2}/${1}
+	cd !$
+	git init
+	git remote add dropbox file://$HOME/Dropbox/Repositories/${1}.git
+	git push dropbox master
+
+	# When you get to a computer that shares this Dropbox account, but hasn’t
+	# checked out Git yet, do as follows:
+	# Which will add your repository locally, and automatically set up a remote
+	# called dropbox which auto–merges with master.
+	cd ~/Projects
+	git clone -o dropbox file://$HOME/Dropbox/repos/myrepo.git
+
+	return 0
+}
