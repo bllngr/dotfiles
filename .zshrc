@@ -29,5 +29,5 @@ plugins=(git)
 # include external funcs, aliases and exports
 source $ZSH/oh-my-zsh.sh
 # source ./.zsh-funcs
-source ./.zsh-exports
-source ./.zsh-aliases
+source ~/.zsh-exports
+source ~/.zsh-aliases
