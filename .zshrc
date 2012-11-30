@@ -31,3 +31,8 @@ source $ZSH/oh-my-zsh.sh
 # source ./.zsh-funcs
 source ~/.zsh-exports
 source ~/.zsh-aliases
+
+# correct commands, but not any arguments (correct_all would do that)
+# needs to be called after sourcing oh-my-zsh.sh, since correct_all needs to be overriden
+unsetopt correctall
+setopt correct
