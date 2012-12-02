@@ -26,10 +26,10 @@ ZSH_THEME="sqrt"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
-# include external funcs, aliases and exports
+# include external funcs and aliases
+# NOTICE: environment variables (like PATH) are set in ~/.profile, so that they are present in gmrun, too.
 source $ZSH/oh-my-zsh.sh
 # source ./.zsh-funcs
-source ~/.zsh-exports
 source ~/.zsh-aliases
 
 # correct commands, but not any arguments (correct_all would do that)
