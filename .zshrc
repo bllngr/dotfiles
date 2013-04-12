@@ -26,6 +26,9 @@ ZSH_THEME="sqrt"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+# rehash after every command to allow for completion of freshly installed packages
+zstyle ':completion:*' rehash true
+
 # include external funcs and aliases
 # NOTICE: environment variables (like PATH) are set in ~/.profile, so that they are present in gmrun, too.
 source $ZSH/oh-my-zsh.sh
