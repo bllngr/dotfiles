@@ -28,6 +28,12 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# set PATH so it includes user's private .local/bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+
 # add Android SDK tools to path and set Android SDK's env variables if Android
 # SDK is installed
 if [ -d "$HOME/.android-sdk" ] ; then
