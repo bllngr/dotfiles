@@ -18,3 +18,6 @@ if [ -f /usr/bin/grc ]; then
 fi
 alias pomodoro='p-timer.sh 25 "Pomodoro" "Pomodoro started, you have 25 minutes left" "Pomodoro ended. Please stop the work and take a short break"'
 alias monoff='xset dpms force off'
+
+# Suffix aliases to open files based on their extension (mostly maps to xdg-open)
+alias -s pdf=xdg-open
