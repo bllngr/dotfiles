@@ -33,6 +33,9 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# set EDITOR for stuff like visudo etc.
+export VISUAL=vim
+export EDITOR=$VISUAL
 
 # add Android SDK tools to path and set Android SDK's env variables if Android
 # SDK is installed
