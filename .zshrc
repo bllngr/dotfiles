@@ -39,3 +39,7 @@ source ~/.zsh-aliases
 # needs to be called after sourcing oh-my-zsh.sh, since correct_all needs to be overriden
 unsetopt correctall
 setopt correct
+
+# enable the use of the bang character for comments
+setopt INTERACTIVE_COMMENTS
+
