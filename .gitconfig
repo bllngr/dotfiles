@@ -3,6 +3,7 @@
 	ci = commit
 	co = checkout
 	br = branch
+	wdiff = diff --color-words
 [user]
 	name = Julius B.
 	email = julius.bullinger+github@gmail.com
@@ -14,3 +15,5 @@
 [core]
 	editor = vim
 	excludesfile = /home/sqrt/.gitignore
+[diff]
+	wordRegex = [A-z0-9_]+|[^[:space:]]
