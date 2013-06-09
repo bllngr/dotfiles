@@ -17,3 +17,5 @@
 	excludesfile = /home/sqrt/.gitignore
 [diff]
 	wordRegex = [A-z0-9_]+|[^[:space:]]
+[push]
+	default = upstream
