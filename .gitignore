@@ -1,9 +1,29 @@
+# LaTeX specific files
+*.aux
+*.log
+*.toc
+*.out
+
+# With PDFTeX, ignore DVIs
+*.dvi
+
+# BibTeX specific files
+*.bbl
+*.blg
+
+# Makeindex specific files
+*.idx
+*.ilg
+*.ind
+
 # OS specific files
 .DS_Store
+Icon?
 Thumbs.db
 
 # Object files and build directories
 *.o
+*.pyc
 bin/
 
 # temp files
