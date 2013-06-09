@@ -16,6 +16,9 @@
 	editor = vim
 	excludesfile = /home/sqrt/.gitignore
 [diff]
+	tool = meld
 	wordRegex = [A-z0-9_]+|[^[:space:]]
+[merge]
+	tool = meld
 [push]
 	default = upstream
